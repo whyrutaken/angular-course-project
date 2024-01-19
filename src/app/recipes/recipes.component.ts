@@ -7,10 +7,10 @@ import { Recipe } from './recipe.model';
   styleUrl: './recipes.component.css'
 })
 export class RecipesComponent {
-  loadedRecipe: Recipe;
+  selectedRecipe: Recipe;
   
   getRecipeDetail(recipe: Recipe){
-    this.loadedRecipe = recipe;
-    console.log(this.loadedRecipe);
+    this.selectedRecipe = recipe;
+    console.log(this.selectedRecipe);
   }
 }

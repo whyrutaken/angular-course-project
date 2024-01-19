@@ -12,9 +12,9 @@ export class RecipeListComponent {
     new Recipe("Test Nokedli", "I am a Nokedli description.", "https://static.streetkitchen.hu/live/uploads/2017/09/tojasos-nokedli-1-scaled.jpg")
   ];
 
-  @Output() selectRecipeItem = new EventEmitter<Recipe>();
+  @Output() recipeItemSelected = new EventEmitter<Recipe>();
 
-  onSelectRecipeItem(recipe: Recipe){
-    this.selectRecipeItem.emit(recipe);
+  onRecipeSelected(recipe: Recipe){
+    this.recipeItemSelected.emit(recipe);
   }
 }
