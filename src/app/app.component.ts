@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'course-project';
-  loadPage: string;
+  loadedPage: string;
 
   onLoadPage(page: string){
-    this.loadPage = page;
+    this.loadedPage = page;
   }
 }
