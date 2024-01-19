@@ -7,19 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'course-project';
-  loadRecipe: boolean;
-  loadShoppingList: boolean;
+  loadPage: string;
 
-  onLoadRecipePage(load: boolean){
-    this.loadRecipe = load;
-    this.loadShoppingList = !load;
-    console.log("Load Recipe");
-  }
-
-  onLoadShoppingListPage(load: boolean){
-    this.loadShoppingList = load;
-    this.loadRecipe = !load;
-    console.log("Load ShoppingList");
-
+  onLoadPage(page: string){
+    this.loadPage = page;
   }
 }

@@ -1,11 +1,10 @@
 <app-header
-  (loadRecipePage)="onLoadRecipePage($event)"
-  (loadShoppingListPage)="onLoadShoppingListPage($event)"></app-header>
+  (loadPage)="onLoadPage($event)"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-        <app-recipes *ngIf="loadRecipe"></app-recipes>
-        <app-shopping-list *ngIf="loadShoppingList"></app-shopping-list>
+        <app-recipes *ngIf="loadPage === 'recipe' "></app-recipes>
+        <app-shopping-list *ngIf="loadPage === 'shopping-list' "></app-shopping-list>
     </div>
   </div>
 </div>
