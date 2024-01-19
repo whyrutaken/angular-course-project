@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'course-project';
-  loadedPage: string;
+  loadedPage = 'recipe';
 
   onLoadPage(page: string){
     this.loadedPage = page;
